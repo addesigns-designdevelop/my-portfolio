@@ -5,60 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adesewa | Portfolio & Resume</title>
     <style>
-        body { 
+        body, html { 
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
             background-color: #1a1a1b; 
-            color: #ffffff; 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
-            margin: 0; 
-            text-align: center;
+            font-family: sans-serif;
         }
-        h1 { 
-            color: #d4af37; 
-            font-size: 2.5rem;
-            margin-bottom: 5px; 
-            letter-spacing: 2px;
+        .header {
+            height: 60px;
+            background-color: #1a1a1b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #d4af37;
         }
-        p { 
-            font-size: 1.1rem;
-            color: #cccccc;
-            margin-bottom: 30px;
+        h1 { color: #d4af37; font-size: 1.2rem; margin: 0; letter-spacing: 1px; }
+        .pdf-container {
+            height: calc(100% - 60px);
+            width: 100%;
         }
-        .btn { 
-            padding: 15px 35px; 
-            background-color: #d4af37; 
-            color: #1a1a1b; 
-            text-decoration: none; 
-            border-radius: 4px; 
-            font-weight: bold; 
-            text-transform: uppercase;
-            transition: 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        .btn:hover { 
-            background-color: #ffffff; 
-            transform: translateY(-3px);
-        }
-        .code-snippet {
-            margin-top: 40px;
-            font-family: 'Courier New', Courier, monospace;
-            color: #666;
-            font-size: 0.9rem;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <h1>ADELEKE ADESEWA</h1>
-    <p>Graphic Designer &bull; Visual Brand Identity &bull; Software Developer</p>
-    
-    <a href="portfolio.pdf" class="btn" target="_blank">View Portfolio</a>
+    <div class="header">
+        <h1>ADELEKE ADESEWA • PORTFOLIO</h1>
+    </div>
 
-    <div class="code-snippet">
-        console.log("Building the intersection of design and code.");
+    <div class="pdf-container">
+        <iframe src="portfolio.pdf#toolbar=0&navpanes=0&scrollbar=0">
+            <p>Your browser does not support inline PDFs. 
+               <a href="portfolio.pdf">Click here to view the PDF.</a>
+            </p>
+        </iframe>
     </div>
 </body>
 </html>
