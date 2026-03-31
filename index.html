@@ -10,28 +10,50 @@
             margin: 0; padding: 0; 
             display: flex; flex-direction: column; align-items: center; 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
         }
         .header { 
-            width: 100%; padding: 20px 0; text-align: center; 
+            width: 100%; padding: 25px 0; text-align: center; 
             border-bottom: 1px solid #d4af37; 
             position: sticky; top: 0; background: #1a1a1b; z-index: 10; 
         }
-        h1 { color: #d4af37; font-size: 1.2rem; margin: 0; letter-spacing: 2px; text-transform: uppercase; }
+        h1 { color: #d4af37; font-size: 1.1rem; margin: 0; letter-spacing: 2px; text-transform: uppercase; }
         
         .portfolio-container { width: 100%; max-width: 900px; padding: 10px; box-sizing: border-box; }
         
         .portfolio-page { 
-            width: 100%; margin-bottom: 20px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            width: 100%; margin-bottom: 25px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6); 
             border: 1px solid #333;
         }
         img { width: 100%; height: auto; display: block; }
 
-        .footer { padding: 60px 20px; text-align: center; background: #111; width: 100%; box-sizing: border-box; }
-        .footer p { color: #888; margin-bottom: 20px; }
+        .footer { 
+            padding: 80px 20px; 
+            text-align: center; 
+            background: #111; 
+            width: 100%; 
+            box-sizing: border-box; 
+            border-top: 1px solid #333;
+        }
+        .contact-title { color: #d4af37; font-size: 1.4rem; margin-bottom: 15px; letter-spacing: 1px; }
+        .contact-subtitle { color: #888; margin-bottom: 25px; font-size: 0.9rem; }
+        
+        .email-link {
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .email-link:hover { color: #d4af37; border-bottom-color: #ffffff; }
+
+        .download-section { margin-top: 50px; padding-top: 40px; border-top: 1px solid #222; }
         
         .btn-download { 
-            padding: 18px 40px; 
+            padding: 15px 35px; 
             background: #d4af37; 
             color: #1a1a1b; 
             text-decoration: none; 
@@ -41,6 +63,7 @@
             transition: 0.3s;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-size: 0.85rem;
         }
         .btn-download:hover { background: #ffffff; transform: translateY(-3px); }
     </style>
@@ -52,18 +75,25 @@
 
     <div class="portfolio-container">
         <img src="page1.jpg" class="portfolio-page" alt="Cover Page">
-        <img src="page2.jpg" class="portfolio-page" alt="Project 1">
-        <img src="page3.jpg" class="portfolio-page" alt="Project 2">
-        <img src="page4.jpg" class="portfolio-page" alt="Project 3">
-        <img src="page5.jpg" class="portfolio-page" alt="Project 4">
-        <img src="page6.jpg" class="portfolio-page" alt="Project 5">
-        <img src="page7.jpg" class="portfolio-page" alt="Project 6">
-        <img src="page8.jpg" class="portfolio-page" alt="Contact">
+        <img src="page2.jpg" class="portfolio-page" alt="Work Page 2">
+        <img src="page3.jpg" class="portfolio-page" alt="Work Page 3">
+        <img src="page4.jpg" class="portfolio-page" alt="Work Page 4">
+        <img src="page5.jpg" class="portfolio-page" alt="Work Page 5">
+        <img src="page6.jpg" class="portfolio-page" alt="Work Page 6">
+        <img src="page7.jpg" class="portfolio-page" alt="Work Page 7">
+        <img src="page8.jpg" class="portfolio-page" alt="Contact Page">
     </div>
 
     <div class="footer">
-        <p>Need a copy for your records?</p>
-        <a href="portfolio.pdf" class="btn-download" target="_blank">Download PDF Version</a>
+        <h2 class="contact-title">WORK WITH ME</h2>
+        <p class="contact-subtitle">Tap below to send me a direct email:</p>
+        
+        <a href="mailto:adesewadesigns99@gmail.com" class="email-link">adesewadesigns99@gmail.com</a>
+        
+        <div class="download-section">
+            <p style="color: #555; font-size: 0.8rem; margin-bottom: 20px;">Need a PDF copy for your records?</p>
+            <a href="portfolio.pdf" class="btn-download" target="_blank">Download Full PDF</a>
+        </div>
     </div>
 </body>
 </html>
